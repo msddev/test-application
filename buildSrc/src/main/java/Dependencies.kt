@@ -92,8 +92,6 @@ object Libraries {
     // GLIDE
     const val GLIDE = "com.github.bumptech.glide:glide:${Versions.GLIDE}"
     const val GLIDE_COMPILER = "com.github.bumptech.glide:compiler:${Versions.GLIDE}"
-
-    const val PREFERENCE = "androidx.preference:preference-ktx:${Versions.PREFERENCE}"
 }
 
 object KotlinLibraries {
@@ -124,6 +122,7 @@ object AndroidLibraries {
     const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:${Versions.NAVIGATION}"
     const val NAVIGATION_RUNTIME =
         "androidx.navigation:navigation-runtime:${Versions.NAVIGATION}"
+    const val PREFERENCE = "androidx.preference:preference-ktx:${Versions.PREFERENCE}"
 }
 
 object TestLibraries {

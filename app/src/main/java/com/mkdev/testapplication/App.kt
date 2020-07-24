@@ -1,6 +1,9 @@
 package com.mkdev.testapplication
 
 import android.app.Application
+import com.mkdev.core_framework.preferences.PrefDelegate
+import com.mkdev.core_framework.utils.localePref
+import com.mkdev.core_framework.utils.wrapLocaledContext
 import com.mkdev.testapplication.di.koinApplicationModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.logger.AndroidLogger
@@ -12,6 +15,9 @@ open class App : Application() {
     override fun onCreate() {
         super.onCreate()
         configureDi()
+        configureDefaultLanguage()
+
+        PrefDelegate.init(this)
     }
 
     // CONFIGURATION ---
@@ -21,6 +27,11 @@ open class App : Application() {
             modules(provideApplicationModules())
             logger(if (BuildConfig.DEBUG) AndroidLogger(Level.DEBUG) else EmptyLogger())
         }
+    }
+
+    private fun configureDefaultLanguage() {
+        val currentLocale: String by localePref()
+        wrapLocaledContext(this, currentLocale)
     }
 
     // PUBLIC API ---
