@@ -10,10 +10,6 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : BaseFragment(R.layout.home_fragment) {
 
-    companion object {
-        fun newInstance() = HomeFragment()
-    }
-
     private val homeViewModel: HomeViewModel by viewModel()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -25,6 +21,10 @@ class HomeFragment : BaseFragment(R.layout.home_fragment) {
                     "url"
                 )
             )
+        }
+
+        homeViewModel.subscribeOnView {
+
         }
     }
 }
