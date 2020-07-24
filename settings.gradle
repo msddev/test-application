@@ -1,3 +1,5 @@
+include ':features:detail'
+include ':features:home'
 include ':data:remote'
 include ':data:model'
 include ':app',
