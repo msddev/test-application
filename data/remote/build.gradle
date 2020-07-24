@@ -1,6 +1,23 @@
-apply plugin: 'kotlin'
+apply plugin: 'com.android.library'
+apply from: '../../gradle/script/commons.gradle'
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    // NETWORK
+    implementation Libraries.RETROFIT_COROUTINE_ADAPTER
+    implementation Libraries.RETROFIT
+    implementation Libraries.RETROFIT_GSON_CONVERTER
+    implementation Libraries.HTTP_LOGGING_INTERCEPTOR
+    implementation Libraries.GSON
+
+    // DATA MODULE
+    implementation project(Modules.MODEL)
+
+    // KOIN
+    implementation Libraries.KOIN
+    implementation Libraries.KOIN_SCOPE
+    implementation Libraries.KOIN_VIEW_MODEL
+    // TEST
+    testImplementation TestLibraries.ANDROID_JUNIT
+    testImplementation TestLibraries.KOIN
+    testImplementation TestLibraries.MOCK_WEB_SERVER
 }

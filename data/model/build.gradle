@@ -1,6 +1,10 @@
-apply plugin: 'kotlin'
+apply plugin: 'com.android.library'
+apply from: '../../gradle/script/commons.gradle'
+
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation Libraries.GSON
+    implementation Libraries.ROOM_KTX
+    implementation Libraries.ROOM_COMPILER
+    implementation Libraries.ROOM_RUNTIME
 }
