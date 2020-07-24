@@ -1,3 +1,5 @@
+include ':data:remote'
+include ':data:model'
 include ':app',
         ':core_framework',
         ':core_test',
