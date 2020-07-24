@@ -15,12 +15,9 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.mkdev.core_framework.common.arch.StatefulViewModel
-import com.mkdev.core_framework.viewmodel.CommunicationViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
-import org.koin.androidx.viewmodel.ext.android.sharedViewModel
-
 
 abstract class BaseBottomSheetDialogFragment(
     @LayoutRes private val layoutId: Int,
@@ -29,8 +26,6 @@ abstract class BaseBottomSheetDialogFragment(
 
     @BottomSheetBehavior.State
     open val defaultState: Int = BottomSheetBehavior.STATE_SETTLING
-
-    private val communicationViewModel: CommunicationViewModel by sharedViewModel()
 
     private val job = SupervisorJob()
     val viewScope = CoroutineScope(Dispatchers.Main + job)

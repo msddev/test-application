@@ -1,23 +1,26 @@
 package com.mkdev.detail
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import com.mkdev.core_framework.base.BaseFragment
+import com.mkdev.core_framework.extention.popBackStack
+import kotlinx.android.synthetic.main.detail_fragment.*
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class DetailFragment : Fragment() {
+class DetailFragment : BaseFragment(R.layout.detail_fragment) {
 
     companion object {
         fun newInstance() = DetailFragment()
     }
 
-    private lateinit var viewModel: DetailViewModel
+    private val detailViewModel: DetailViewModel by viewModel()
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.detail_fragment, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        detailToolbar.setNavigationOnClickListener {
+            popBackStack()
+        }
     }
 }

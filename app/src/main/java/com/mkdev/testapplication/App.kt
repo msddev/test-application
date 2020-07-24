@@ -15,9 +15,10 @@ open class App : Application() {
     override fun onCreate() {
         super.onCreate()
         configureDi()
-        configureDefaultLanguage()
 
         PrefDelegate.init(this)
+        configureDefaultLanguage()
+
     }
 
     // CONFIGURATION ---

@@ -10,6 +10,7 @@
         <!--<item name="materialThemeOverlay">@style/ThemeOverlay.MyApp.Toolbar</item>-->
         <item name="titleTextAppearance">@style/TextAppearance.MyApp.Headline6</item>
         <item name="subtitleTextAppearance">@style/TextAppearance.MyApp.Subtitle1</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
     </style>
 
     <style name="ThemeOverlay.MyApp.Toolbar" parent="">

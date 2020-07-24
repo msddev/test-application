@@ -13,6 +13,7 @@
         <item name="colorSecondaryVariant">@color/portafino</item>
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <item name="toolbarStyle">@style/Widget.MyApp.Toolbar</item>
+        <item name="toolbarBackIcon">@drawable/round_arrow_back_white_24dp</item>
         <item name="colorError">@color/red_500</item>
 
         <item name="fontFamily">@font/dana_medium</item>

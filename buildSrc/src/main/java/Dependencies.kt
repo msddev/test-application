@@ -48,7 +48,7 @@ object Versions {
     const val KOIN = "2.0.1"
 
     const val LIFECYCLE = "2.2.0"
-    const val NAVIGATION = "2.3.0"
+    const val NAVIGATION = "2.0.0"
     const val SAFE_ARGS = "2.3.0"
     const val ROOM = "2.2.5"
 
