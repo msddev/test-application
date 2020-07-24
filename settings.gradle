@@ -1,5 +1,6 @@
 include ':app',
         ':core_framework',
-        ':core_test'
+        ':core_test',
+        ':navigation'
 
 rootProject.name = "Test Application"
