@@ -1,2 +1,5 @@
-include ':app'
+include ':app',
+        ':core_framework',
+        ':core_test'
+
 rootProject.name = "Test Application"
