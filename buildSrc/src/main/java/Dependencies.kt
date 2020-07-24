@@ -4,7 +4,7 @@ object Modules {
     const val NAVIGATION = ":navigation"
 
     const val CORE_FRAMEWORK = ":core_framework"
-    const val CORE_TEST = ":common_test"
+    const val CORE_TEST = ":core_test"
 
     const val LOCAL = ":data:local"
     const val REMOTE = ":data:remote"
@@ -130,7 +130,7 @@ object TestLibraries {
     // ANDROID TEST
     const val ANDROID_TEST_RUNNER = "androidx.test:runner:${Versions.ANDROID_TEST_RUNNER}"
     const val ESPRESSO_CORE = "androidx.test.espresso:espresso-core:${Versions.ESPRESSO_CORE}"
-    const val ESPRESSO_CORE_LIB =
+    const val ESPRESSO_CONTRIB =
         "androidx.test.espresso:espresso-contrib:${Versions.ESPRESSO_CORE}"
     const val ARCH_CORE_TEST = "androidx.arch.core:core-testing:${Versions.ARCH_CORE_TEST}"
     const val ANDROID_JUNIT = "androidx.test.ext:junit:${Versions.ANDROID_JUNIT}"
@@ -144,6 +144,7 @@ object TestLibraries {
 
     // MOCK
     const val MOCKK = "io.mockk:mockk:${Versions.MOCKK}"
+    const val MOCKK_ANDROID = "io.mockk:mockk-android:${Versions.MOCKK}"
     const val MOCKITO_KOTLIN =
         "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.MOCKITO_KOTLIN}"
     const val MOCKITO_CORE = "org.mockito:mockito-core:${Versions.MOCKITO_CORE}"

@@ -9,12 +9,15 @@ android {
         versionCode Releases.VERSION_CODE
         versionName Releases.VERSION_NAME
     }
+
     buildTypes {
         debug {
             minifyEnabled false
+            debuggable true
         }
         release {
             minifyEnabled true
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

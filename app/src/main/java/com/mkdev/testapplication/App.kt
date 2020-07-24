@@ -2,7 +2,6 @@ package com.mkdev.testapplication
 
 import android.app.Application
 import com.mkdev.testapplication.di.koinApplicationModules
-import org.koin.android.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.logger.AndroidLogger
 import org.koin.core.context.startKoin

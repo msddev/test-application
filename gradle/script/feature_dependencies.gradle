@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply from: '../../gradle/script/core_dependencies.gradle'
+apply from: '../../gradle/script/commons.gradle'
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+    implementation project(Modules.CORE_FRAMEWORK)
+
+    implementation project(Modules.REPOSITORY)
+    implementation project(Modules.NAVIGATION)
+    // KOIN (Because each feature has to handle its dependencies)
+    implementation Libraries.KOIN
+    implementation Libraries.KOIN_SCOPE
+    implementation Libraries.KOIN_VIEW_MODEL
+
+    // TEST
+    androidTestImplementation project(Modules.CORE_TEST)
+    testImplementation project(Modules.CORE_TEST)
+
+    androidTestImplementation TestLibraries.ANDROID_TEST_RUNNER
+    androidTestImplementation TestLibraries.ANDROID_JUNIT
+    androidTestImplementation TestLibraries.MOCKK_ANDROID
+    androidTestImplementation TestLibraries.FRAGMENT_TEST
+    androidTestImplementation TestLibraries.ESPRESSO_CORE
+    androidTestImplementation TestLibraries.ESPRESSO_CONTRIB
+    androidTestImplementation TestLibraries.KOIN
+    androidTestImplementation TestLibraries.ARCH_CORE_TEST
+    testImplementation TestLibraries.ANDROID_TEST_RUNNER
+    testImplementation TestLibraries.ANDROID_JUNIT
+    testImplementation TestLibraries.MOCKK
+    testImplementation TestLibraries.ARCH_CORE_TEST
+}

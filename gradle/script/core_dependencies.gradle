@@ -1,0 +1,16 @@
+dependencies {
+    // KOTLIN
+    implementation KotlinLibraries.KOTLIN
+    implementation KotlinLibraries.KOTLIN_COROUTINE_CORE
+    implementation AndroidLibraries.KOTLIN_COROUTINES_ANDROID
+    // ANDROID
+    implementation AndroidLibraries.APP_COMPAT
+    implementation AndroidLibraries.CORE_KTX
+    implementation AndroidLibraries.CONSTRAINT
+    implementation AndroidLibraries.LIFECYCLE_VIEW_MODEL
+    implementation AndroidLibraries.LIFECYCLE_EXTENSIONS
+    implementation AndroidLibraries.RECYCLER_VIEW
+    implementation AndroidLibraries.NAVIGATION_UI
+    implementation AndroidLibraries.NAVIGATION_FRAGMENT
+    implementation AndroidLibraries.NAVIGATION_RUNTIME
+}
