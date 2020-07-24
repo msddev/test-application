@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light theme color palette !-->
+    <color name="sangria">#9A0007</color><!--colorPrimaryVariant-->
+
+    <color name="color_divider">#1F000000</color><!--divider-->
+
+    <!-- dark theme color palette !-->
+    <color name="turkish_rose">#BA6B6C</color><!--colorPrimaryVariant-->
+
+    <!-- used in both the light and dark theme-->
+    <color name="portafino">#FFFFB0</color><!--colorSecondaryVariant-->
+
+</resources>

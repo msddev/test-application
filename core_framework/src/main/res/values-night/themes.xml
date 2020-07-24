@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.MyAppName" parent="Base.AppTheme.MyApp">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red_200</item>
+        <item name="colorPrimaryDark">@color/turkish_rose</item>
+        <item name="colorAccent">@color/orange_200</item>
+        <item name="colorPrimaryVariant">@color/turkish_rose</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/orange_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/portafino</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.MyApp.Button" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.MyApp.SmallComponent.Button</item>
+        <item name="android:textAppearance">@style/TextAppearance.MyApp.Button</item>
+    </style>
+
+    <style name="Widget.MyApp.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <!--<item name="materialThemeOverlay">@style/ThemeOverlay.MyApp.Toolbar</item>-->
+        <item name="titleTextAppearance">@style/TextAppearance.MyApp.Headline6</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.MyApp.Subtitle1</item>
+    </style>
+
+    <style name="ThemeOverlay.MyApp.Toolbar" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/red_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
+</resources>

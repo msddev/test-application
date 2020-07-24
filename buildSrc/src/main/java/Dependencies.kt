@@ -33,6 +33,7 @@ object Versions {
     const val TARGET_SDK = 30
 
     const val APP_COMPAT = "1.1.0"
+    const val MATERIAL = "1.3.0-alpha02"
     const val CORE_KTX = "1.3.1"
     const val CONSTRAINT_LAYOUT = "1.1.3"
     const val RECYCLER_VIEW = "1.2.0-alpha05"
@@ -110,6 +111,7 @@ object AndroidLibraries {
 
     // ANDROID
     const val APP_COMPAT = "androidx.appcompat:appcompat:${Versions.APP_COMPAT}"
+    const val MATERIAL = "com.google.android.material:material:${Versions.MATERIAL}"
     const val CORE_KTX = "androidx.core:core-ktx:${Versions.CORE_KTX}"
     const val CONSTRAINT =
         "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}"
