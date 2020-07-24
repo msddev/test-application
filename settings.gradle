@@ -1,12 +1,12 @@
-include ':features:detail'
-include ':features:home'
-include ':data:remote'
-include ':data:model'
 include ':app',
         ':core_framework',
         ':core_test',
         ':navigation',
         ':data:local',
-        ':data:repository'
+        ':data:repository',
+        ':data:remote',
+        ':data:model',
+        ':features:home',
+        ':features:detail'
 
 rootProject.name = "Test Application"

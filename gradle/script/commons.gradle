@@ -1,0 +1,25 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion Versions.COMPILE_SDK
+    defaultConfig {
+        minSdkVersion Versions.MIN_SDK
+        targetSdkVersion Versions.TARGET_SDK
+        versionCode Releases.VERSION_CODE
+        versionName Releases.VERSION_NAME
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation KotlinLibraries.KOTLIN
+}
