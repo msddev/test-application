@@ -6,9 +6,6 @@ android {
     defaultConfig {
         testInstrumentationRunner "com.mkdev.core_test.FakeRunner"
     }
-    dataBinding {
-        enabled true
-    }
     testOptions {
         animationsDisabled = true
     }
