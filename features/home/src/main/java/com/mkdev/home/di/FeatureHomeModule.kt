@@ -7,5 +7,5 @@ import org.koin.dsl.module
 
 val featureHomeModule = module {
     factory { GetPhotosUseCase(get()) }
-    viewModel { HomeViewModel(get()) }
+    viewModel { HomeViewModel(get(), get()) }
 }

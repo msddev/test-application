@@ -6,11 +6,14 @@ import androidx.lifecycle.MutableLiveData
 import com.mkdev.core_framework.base.BaseViewModel
 import com.mkdev.home.domain.GetPhotosUseCase
 import com.mkdev.model.Photo
+import com.mkdev.repository.AppDispatchers
 import com.mkdev.repository.utils.Resource
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class HomeViewModel(
-    private val getPhotosUseCase: GetPhotosUseCase
+    private val getPhotosUseCase: GetPhotosUseCase,
+    private val dispatchers: AppDispatchers
 ) : BaseViewModel() {
 
     private val _photos = MediatorLiveData<Resource<List<Photo>>>()
@@ -22,9 +25,9 @@ class HomeViewModel(
     }
 
     private fun getPhotos() {
-        launch {
+        launch(dispatchers.main) {
             _photos.removeSource(photosSource)
-            onIO {
+            withContext(dispatchers.io) {
                 photosSource = getPhotosUseCase()
             }
             _photos.addSource(photosSource) {
