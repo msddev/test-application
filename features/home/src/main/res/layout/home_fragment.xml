@@ -16,7 +16,7 @@
             style="?attr/toolbarStyle"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="عنوان تست" />
+            app:title="Photos list" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -25,11 +25,23 @@
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/homeOpenDetailButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Open Detail"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homePhotosList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?colorOnBackground"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:spanCount="2"
+            tools:listitem="@layout/item_home_photo" />
+
+        <ProgressBar
+            android:id="@+id/homeLoadingView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

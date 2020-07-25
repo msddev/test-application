@@ -67,6 +67,7 @@ object Versions {
     const val TIMBER = "4.7.1"
     const val GLIDE = "4.11.0"
     const val PREFERENCE = "1.1.1"
+    const val PICASSO = "2.71828"
 }
 
 object Libraries {
@@ -85,6 +86,7 @@ object Libraries {
     const val RETROFIT_GSON_CONVERTER = "com.squareup.retrofit2:converter-gson:${Versions.RETROFIT}"
     const val HTTP_LOGGING_INTERCEPTOR =
         "com.squareup.okhttp3:logging-interceptor:${Versions.OKHTTP}"
+    const val OKHTTP = "com.squareup.okhttp3:okhttp:${Versions.OKHTTP}"
     const val GSON = "com.google.code.gson:gson:${Versions.GSON}"
     const val RETROFIT_COROUTINE_ADAPTER =
         "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${Versions.RETROFIT_COROUTINES}"
@@ -92,6 +94,9 @@ object Libraries {
     // GLIDE
     const val GLIDE = "com.github.bumptech.glide:glide:${Versions.GLIDE}"
     const val GLIDE_COMPILER = "com.github.bumptech.glide:compiler:${Versions.GLIDE}"
+    const val GLIDE_INTEGRATION = "com.github.bumptech.glide:okhttp3-integration:${Versions.GLIDE}"
+
+    const val PICASSO = "com.squareup.picasso:picasso:${Versions.PICASSO}"
 }
 
 object KotlinLibraries {

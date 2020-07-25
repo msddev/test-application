@@ -7,7 +7,7 @@ import com.mkdev.model.Photo
 @Dao
 abstract class SampleDao : BaseDao<Photo>() {
 
-    @Query("SELECT * FROM Photo LIMIT 30")
+    @Query("SELECT * FROM Photo LIMIT 100")
     abstract suspend fun getPhotos(): List<Photo>
 
     @Query("SELECT * FROM Photo WHERE id = :id LIMIT 1")

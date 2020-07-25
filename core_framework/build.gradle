@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply from: '../gradle/script/commons.gradle'
+apply plugin: 'kotlin-kapt'
 
 dependencies {
     implementation AndroidLibraries.APP_COMPAT
@@ -9,6 +10,7 @@ dependencies {
     implementation AndroidLibraries.NAVIGATION_RUNTIME
     implementation AndroidLibraries.PREFERENCE
     implementation Libraries.GSON
+    implementation Libraries.OKHTTP
 
     // KOIN (Because each feature has to handle its dependencies)
     implementation Libraries.KOIN

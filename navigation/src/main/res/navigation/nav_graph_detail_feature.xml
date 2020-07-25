@@ -8,7 +8,10 @@
         android:id="@+id/detailFragment"
         android:name="com.mkdev.detail.DetailFragment">
 
-
+        <argument
+            android:name="image"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 
 </navigation>

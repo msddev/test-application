@@ -12,7 +12,5 @@ android {
 }
 
 dependencies {
-    // GLIDE
-    implementation Libraries.GLIDE
-    implementation Libraries.GLIDE_COMPILER
+    implementation Libraries.PICASSO
 }

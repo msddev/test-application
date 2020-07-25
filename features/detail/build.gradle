@@ -1,5 +1,7 @@
 apply from: '../../gradle/script/feature_dependencies.gradle'
 apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -10,6 +12,5 @@ android {
 
 dependencies {
     // GLIDE
-    implementation Libraries.GLIDE
-    implementation Libraries.GLIDE_COMPILER
+    implementation Libraries.PICASSO
 }
